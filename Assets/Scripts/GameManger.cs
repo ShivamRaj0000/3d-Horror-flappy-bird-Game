@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManger : MonoBehaviour
 {
@@ -18,5 +19,10 @@ public class GameManger : MonoBehaviour
     public void ActiveGameOver()
     {
         gameOverCanvas.SetActive(true);
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Leverl 01");
     }
 }
