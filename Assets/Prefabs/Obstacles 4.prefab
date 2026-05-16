@@ -11,10 +11,9 @@ GameObject:
   - component: {fileID: 1983824403504898787}
   - component: {fileID: 8450156518795829321}
   - component: {fileID: 1966801849541459052}
-  - component: {fileID: -3955262417103640696}
   m_Layer: 0
   m_Name: Obstacles 4
-  m_TagString: obstacles
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61,18 +60,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 160bd1fec66c96449acaea2eb2c63fec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
---- !u!114 &-3955262417103640696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005006090080172734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68228f17a8352854d9e601cf32516086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CollisionDetection
 --- !u!1001 &1522650174921625487
 PrefabInstance:
   m_ObjectHideFlags: 0

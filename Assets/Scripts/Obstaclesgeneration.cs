@@ -5,9 +5,11 @@ using UnityEngine;
 public class Obstaclesgeneration : MonoBehaviour
 {
     public GameObject[] prefabs;
+    private CollisionDetection collisionDetectionScripts;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        collisionDetectionScripts = GameObject.Find("Player").GetComponent<CollisionDetection>();
         StartCoroutine(SpawnTime());
     }
 
@@ -24,7 +26,11 @@ public class Obstaclesgeneration : MonoBehaviour
         {
         yield return new WaitForSeconds(2);
         int prefabsNumber = UnityEngine.Random.Range(0, prefabs.Length);
-        Instantiate(prefabs[prefabsNumber], transform.position, Quaternion.identity);              
+        if(collisionDetectionScripts.isGameOver == false)
+            {
+                Instantiate(prefabs[prefabsNumber], transform.position, Quaternion.identity);  
+            }
+                    
         }
 
 
