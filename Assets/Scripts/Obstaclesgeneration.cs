@@ -29,17 +29,4 @@ public class Obstaclesgeneration : MonoBehaviour
 
 
     }
-
-    private void OnTriggerEnter(Collider other) {
-        
-    
-    {
-        if (other.gameObject.CompareTag("obstacles"))
-        {
-            // gameObject.SetActive(false);
-            Debug.Log("collision detected");
-            
-        }
-    }
-}
 }
