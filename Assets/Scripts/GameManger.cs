@@ -8,7 +8,7 @@ public class GameManger : MonoBehaviour
     public GameObject gameOverCanvas;
     public TMP_Text scoreText;
     public TMP_Text finalScore;
-    private int score;
+    public int score;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
