@@ -10,12 +10,14 @@ public class Obstaclesgeneration : MonoBehaviour
     private CollisionDetection collisionDetectionScripts;
     private GameManger gameMangerScripts;
     private int difficultyScore =10;
+    public GameObject powerUpPrefabs;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameMangerScripts = GameObject.Find("GameManger").GetComponent<GameManger>();
         collisionDetectionScripts = GameObject.Find("Player").GetComponent<CollisionDetection>();
         StartCoroutine(SpawnTime());
+        StartCoroutine(powerUpSpawn());
     }
 
     // Update is called once per frame
@@ -42,5 +44,21 @@ public class Obstaclesgeneration : MonoBehaviour
         }
 
 
+    }
+
+    IEnumerator powerUpSpawn()
+    {
+         while (collisionDetectionScripts.isGameOver == false)
+        {
+            if (gameMangerScripts.score >= 5)
+        {
+
+          Vector3 randomPosition = new Vector3(-30f,UnityEngine.Random.Range(7f,5f),0f);
+            Instantiate(powerUpPrefabs, randomPosition, Quaternion.identity);  
+        }
+           yield return new WaitForSeconds(3f);
+            
+        }
+        
     }
 }

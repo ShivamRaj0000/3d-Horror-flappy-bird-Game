@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 8189249589054502755}
   - component: {fileID: 2063561442446329080}
   - component: {fileID: 2294809665960731162}
+  - component: {fileID: 4526345759605982571}
+  - component: {fileID: 6295944466232920305}
   - component: {fileID: 2006775036839480698}
   m_Layer: 0
   m_Name: Power Up
@@ -128,6 +130,31 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &4526345759605982571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4058909261665314201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 160bd1fec66c96449acaea2eb2c63fec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DestroyOutOfBounds
+--- !u!114 &6295944466232920305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4058909261665314201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b824d1147e70634408efc32a000320e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstaclesMovement
+  speed: 5
 --- !u!114 &2006775036839480698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,5 +169,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   speed: 5
   coinRotateSpeed: 60
-  powerUpCount: 0
-  isPowerUpCollected: 0

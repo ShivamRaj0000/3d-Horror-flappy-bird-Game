@@ -507,7 +507,7 @@ MonoBehaviour:
   - {fileID: 111335249656623832, guid: 4d2c7e5e1f4bb3b48adb62bed4a15336, type: 3}
   - {fileID: 4272479482358634433, guid: 0e53bc307b22fa444b503946f948a3ef, type: 3}
   sceonds: 2
-  powerUpPrefabs: {fileID: 4058909261665314201, guid: ba4e0f89191fa7743ab21a939455218d, type: 3}
+  powerUpPrefabs: {fileID: 0}
 --- !u!4 &328922539
 Transform:
   m_ObjectHideFlags: 0
@@ -1863,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 2051443205}
     - target: {fileID: 1670488799024327507, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_VersionIndex
-      value: 4809
+      value: 4803
       objectReference: {fileID: 0}
     - target: {fileID: 2820694527013823734, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1911,7 +1911,7 @@ PrefabInstance:
       objectReference: {fileID: 2005669147}
     - target: {fileID: 6993863139001323017, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_VersionIndex
-      value: 4809
+      value: 4803
       objectReference: {fileID: 0}
     - target: {fileID: 7119149421258477094, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_Mesh
@@ -2367,7 +2367,7 @@ PrefabInstance:
       objectReference: {fileID: 1083548369}
     - target: {fileID: 1670488799024327507, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_VersionIndex
-      value: 4809
+      value: 4803
       objectReference: {fileID: 0}
     - target: {fileID: 2820694527013823734, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2415,7 +2415,7 @@ PrefabInstance:
       objectReference: {fileID: 1890805930}
     - target: {fileID: 6993863139001323017, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_VersionIndex
-      value: 4809
+      value: 4803
       objectReference: {fileID: 0}
     - target: {fileID: 7119149421258477094, guid: d40818a84530c1d47b1f54c6acf2e486, type: 3}
       propertyPath: m_Mesh

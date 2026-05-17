@@ -9,6 +9,7 @@ public class GameManger : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text finalScore;
     public int score;
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

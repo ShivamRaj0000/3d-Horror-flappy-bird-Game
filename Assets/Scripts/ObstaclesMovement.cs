@@ -4,7 +4,7 @@ public class ObstaclesMovement : MonoBehaviour
 {
     public float speed = 5f;
     private int difficultyScore = 10;
-    private int difficultySpeed =2;
+    private float difficultySpeed =1.5f;
     private CollisionDetection collisionDetectionScripts;
      private GameManger gameMangerScripts;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
