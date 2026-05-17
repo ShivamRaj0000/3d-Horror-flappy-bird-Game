@@ -14,7 +14,7 @@ public class PowerUpMechanisms : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPowerUpCollected == true && Input.GetKeyDown(KeyCode.S) && powerUpCount != 0)
+        if(isPowerUpCollected == true && Input.GetKeyDown(KeyCode.Space) && powerUpCount != 0)
         {
             Instantiate(fireBullet, transform.position, Quaternion.identity);
 
