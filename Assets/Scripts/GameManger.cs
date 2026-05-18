@@ -30,7 +30,7 @@ public class GameManger : MonoBehaviour
         PowerUpScore +=powerUpCollected;
         PowerUpScoreText.text="POwer UP: " + PowerUpScore;
     }
-public void AddScore(int amount)
+    public void AddScore(int amount)
     {
         score+=amount;
         scoreText.text = "Score: " + score;
