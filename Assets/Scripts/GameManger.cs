@@ -8,18 +8,27 @@ public class GameManger : MonoBehaviour
     public GameObject gameOverCanvas;
     public TMP_Text scoreText;
     public TMP_Text finalScore;
+    public TMP_Text PowerUpScoreText;
     public int score;
+    public int PowerUpScore;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
            scoreText.text = "Score: 0";
+           PowerUpScoreText.text="Power UP: 0";
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void AddPowerUPScore(int powerUpCollected)
+    {
+        PowerUpScore +=powerUpCollected;
+        PowerUpScoreText.text="POwer UP: " + PowerUpScore;
     }
 public void AddScore(int amount)
     {
