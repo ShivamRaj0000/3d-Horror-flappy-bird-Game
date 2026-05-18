@@ -53,7 +53,7 @@ public class Obstaclesgeneration : MonoBehaviour
             if (gameMangerScripts.score >= 5)
         {
 
-          Vector3 randomPosition = new Vector3(-30f,UnityEngine.Random.Range(7f,5f),0f);
+          Vector3 randomPosition = new Vector3(-30f,UnityEngine.Random.Range(7,5),0f);
             Instantiate(powerUpPrefabs, randomPosition, Quaternion.identity);  
         }
            yield return new WaitForSeconds(3f);
