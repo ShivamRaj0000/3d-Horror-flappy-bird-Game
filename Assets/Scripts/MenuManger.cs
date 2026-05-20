@@ -3,9 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuManger : MonoBehaviour
 {
+
+    public GameObject selectMode;
+
     public void StartScene()
     {
-        SceneManager.LoadScene("Leverl 01");
+       selectMode.SetActive(true);
     }
 
     public void Exit()
