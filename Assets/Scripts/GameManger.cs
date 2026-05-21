@@ -11,6 +11,7 @@ public class GameManger : MonoBehaviour
     public TMP_Text PowerUpScoreText;
     public int score;
     public int PowerUpScore;
+    public GameObject enemy;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,10 @@ public class GameManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(score == 5)
+        {
+            enemy.SetActive(true);
+        }
         
     }
 
