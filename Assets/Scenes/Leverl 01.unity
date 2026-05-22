@@ -479,7 +479,6 @@ GameObject:
   - component: {fileID: 328922539}
   - component: {fileID: 328922538}
   - component: {fileID: 328922540}
-  - component: {fileID: 328922541}
   m_Layer: 0
   m_Name: GameManger
   m_TagString: Untagged
@@ -541,18 +540,7 @@ MonoBehaviour:
   PowerUpScoreText: {fileID: 469873093}
   score: 0
   PowerUpScore: 0
---- !u!114 &328922541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328922537}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4635c3f938483174da679fd7d13c3527, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LevelDifficulty
+  enemy: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0

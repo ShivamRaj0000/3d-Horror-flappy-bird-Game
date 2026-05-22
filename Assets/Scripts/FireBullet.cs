@@ -13,8 +13,16 @@ public class FireBullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        // transform.Translate(Vector3.left * speed * Time.deltaTime);
+        Shoot();
         
+    }
+
+    public void Shoot()
+    {
+        Rigidbody fireBulletRig = GetComponent<Rigidbody>();
+        fireBulletRig.linearVelocity = transform.forward*speed;
+     
     }
 
      private void OnTriggerEnter(Collider other)

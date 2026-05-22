@@ -6,6 +6,7 @@ public class PowerUpMechanisms : MonoBehaviour
     public int powerUpCount;
     public bool isPowerUpCollected=false;
     private GameManger gameMangerScripts;
+    public Transform firePoint;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +18,7 @@ public class PowerUpMechanisms : MonoBehaviour
     {
         if(isPowerUpCollected == true && Input.GetKeyDown(KeyCode.Space) && powerUpCount != 0)
         {
-            Instantiate(fireBullet, transform.position, Quaternion.identity);
+            Instantiate(fireBullet, firePoint.position, firePoint.rotation);
             Debug.Log("fire the powerup");
             powerUpCount--;
             gameMangerScripts.AddPowerUPScore(-1);
