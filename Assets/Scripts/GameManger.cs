@@ -37,7 +37,7 @@ public class GameManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enemy !=null && score >= 5)
+        if(enemy !=null && score >= 30)
         {
             enemy.SetActive(true);
         }

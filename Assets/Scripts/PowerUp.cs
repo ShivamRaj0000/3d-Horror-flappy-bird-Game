@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    public float speed = 5f;
+
     public float coinRotateSpeed = 60f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

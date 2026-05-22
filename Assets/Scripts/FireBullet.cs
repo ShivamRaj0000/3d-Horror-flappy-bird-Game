@@ -7,14 +7,14 @@ public class FireBullet : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+         Shoot();
     }
 
     // Update is called once per frame
     void Update()
     {
         // transform.Translate(Vector3.left * speed * Time.deltaTime);
-        Shoot();
+       
         
     }
 
@@ -31,6 +31,12 @@ public class FireBullet : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(other.gameObject);    
+        }
+
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            FindFirstObjectByType<GameManger>().ActiveGameOver();
         }
     
         }
