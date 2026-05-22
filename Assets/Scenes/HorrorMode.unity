@@ -540,7 +540,7 @@ MonoBehaviour:
   PowerUpScoreText: {fileID: 469873093}
   score: 0
   PowerUpScore: 0
-  enemy: {fileID: 0}
+  enemy: {fileID: 1116114989}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2036,7 +2036,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!135 &1116114990
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMechanism
   fireBulletPrefabs: {fileID: 768341494533211515, guid: b3deab75884482a428603acf6bccbbbe, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 845031231}
 --- !u!1 &1164836805
 GameObject:
   m_ObjectHideFlags: 0

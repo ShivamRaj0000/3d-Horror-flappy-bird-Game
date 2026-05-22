@@ -11,25 +11,23 @@ public class GameManger : MonoBehaviour
     public TMP_Text PowerUpScoreText;
     public int score;
     public int PowerUpScore;
-    public GameObject enemy;
+    [SerializeField] private GameObject enemy;
+
 
     void Awake()
     {
-         EnemyMechanism enemyScripts = Object.FindAnyObjectByType<EnemyMechanism>(FindObjectsInactive.Include);
-         if(enemyScripts != null)
+        if(enemy != null)
         {
-            enemy = enemyScripts.gameObject;
-        Debug.Log("Success: Enemy found and referenced!");
+            enemy.SetActive(false);
+        }
+        
     }
-    else
-    {
-        Debug.LogError("Error: Could not find any object with EnemyMechanism attached in this scene!");
-    }
-    }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //  enemy = GameObject.Find("Enemy");
+        
+       
        
            scoreText.text = "Score: 0";
            PowerUpScoreText.text="Power UP: 0";
@@ -65,7 +63,7 @@ public class GameManger : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("Leverl 01");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void Menu()
