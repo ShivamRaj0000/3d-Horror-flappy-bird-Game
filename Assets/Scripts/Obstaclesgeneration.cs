@@ -6,10 +6,10 @@ public class Obstaclesgeneration : MonoBehaviour
 {
     public GameObject[] prefabs;
 
-    public float sceonds = 2.0f;
+    public float sceonds ;
     private CollisionDetection collisionDetectionScripts;
     private GameManger gameMangerScripts;
-    private int difficultyScore =10;
+    private int difficultyScore =20;
     public GameObject powerUpPrefabs;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,7 +33,7 @@ public class Obstaclesgeneration : MonoBehaviour
         {
             if(gameMangerScripts.score>= difficultyScore)
             {
-                sceonds = 1.0f;
+                sceonds = 1.5f;
                 Debug.Log("you can do it ");
             }
             yield return new WaitForSeconds(sceonds);
